@@ -36,7 +36,6 @@ if ($worker) {
     $obj = ZRTG::Ventilator->new();
 }
 
-# Use 172.28.15.250:5301 for testing
 if ($takeover) {
     $obj->start("tcp://${endpoint}", $takeover);
 } else {
